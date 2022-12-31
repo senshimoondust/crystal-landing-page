@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crystals 🌙</title>
+    <style>
+      body {
+        background: linear-gradient(
+          110.5deg,
+          rgba(248, 196, 249, 0.66) 22.8%,
+          rgba(253, 122, 4, 0.15) 64.6%
+        );
+      }
+
+      h1 {
+        font-size: 48px;
+        font-family: fantasy;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 10px 5px;
+        text-align: center;
+        color: #05141b;
+        background: #ffc1c8;
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      h2 {
+        font-family: fantasy;
+        font-size: 32px;
+        text-align: center;
+        color: #890c3b;
+        padding: 10px 5px;
+        border: 1px solid black;
+        border-radius: 10px;
+        background: #ffe3b0;
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      button {
+        background: #9896f1;
+        display: block;
+        margin: 0 auto;
+        text-decoration: none;
+        border: none;
+        color: white;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+        transition: all 200ms ease-in-out;
+      }
+
+      p {
+        line-height: 1.5;
+        text-align: center;
+        font-family: fantasy;
+        font-size: 22px;
+        color: #ffe3b0;
+        border: 1px solid white;
+        border-radius: 10px;
+        background: #9896f1;
+        padding: 20px;
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 50%;
+        border-radius: 10%;
+        padding: 25px;
+      }
+
+      a {
+        display: block;
+        margin: 0 auto;
+      }
+
+      footer {
+        text-align: center;
+        padding: 25px;
+        font-family: monospace;
+        font-size: 12px;
+        color: rgb(8, 0, 153);
+      }
+
+      .container {
+        text-align: center;
+        font-size: 14px;
+        font-family: monospace;
+        padding: 25px;
+      }
+
+      button:hover {
+        opacity: 0.9;
+        text-decoration: underline;
+        cursor: pointer;
+        color: #8ef6e4;
+        background: #ffe3b0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>✨Healing Crystals & Stones ✨</h1>
+    <h2>Learn about their Metaphysical Properties!</h2>
+    <hr />
+
+    <div>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/014/024/original/HealingCrystals.jpeg?1627364470"
+        alt="HealingCrystals"
+      />
+      <p>
+        There are a number of different types of crystals some people believe to
+        be filled with their own healing abilities for the mind, body, and soul.
+        They’re thought to promote the flow of good energy and help rid the body
+        and mind of negative energy for physical and emotional benefits.
+        Historically speaking, crystals are touted as ancient forms of medicine,
+        with philosophies borrowed from Hinduism and Buddhism. However, it’s
+        important to know that there’s no scientific evidence to support the use
+        of crystals. Despite this, people are still drawn to their colors and
+        beauty.
+      </p>
+      <a
+        class="container"
+        href="https://www.healthline.com/health/mental-health/guide-to-healing-crystals"
+        target="_blank"
+        >Learn about Crystals</a
+      >
+      <button>More Info</button>
+    </div>
+    <footer>Coded by Jennifer Myrie</footer>
+    <script>
+      function learn() {
+        let name = prompt("What is your first name?");
+        let email = prompt("What is your email?");
+
+        alert(
+          "Thank you " + name + "! You have been subscribed to our email list."
+        );
+      }
+
+      let button = document.querySelector("button");
+      button.addEventListener("click", learn);
+    </script>
+  </body>
+</html>
